@@ -1,0 +1,33 @@
+// Your code here!
+
+$m="tesk";
+$n="stet";
+
+
+$c=str_split($m);
+$j=str_split($n);
+ $s=0;
+ if(strlen($m)==strlen($n))
+ {
+for($i=0;$i<strlen($n);$i++)
+{
+    if((in_array($m[$i],$j))==false)
+    {$s=0;break;}
+    else 
+    $s++;
+    
+}
+     
+ }
+else
+$s=0;
+
+
+if($s==0)
+{
+    echo "not anagram";
+}
+else
+echo "anagram";
+
+?>
